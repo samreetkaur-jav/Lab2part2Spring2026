@@ -1,4 +1,4 @@
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 
 /**
@@ -20,28 +20,29 @@ public class ProChall15
         final double COMM_RATE = 0.02;
 
        
-        String temp;
+    
         double  total,pricePerShare, commission,totalCostShares;
         int numShares;
+        Scanner keyboard = new Scanner(System.in);
 
   
-        temp = JOptionPane.showInputDialog("Enter number of shares purchased:");
-        numShares = Integer.parseInt(temp);
+        System.out.print("Enter number of shares purchased: ");
+        numShares = keyboard.nextInt();
 
-        temp = JOptionPane.showInputDialog("Enter price per share:");
-        pricePerShare = Double.parseDouble(temp);
-
+        System.out.print("Enter price per share: ");
+        pricePerShare = keyboard.nextDouble();
+        
       // Calculate final total cost including commission
-        totalCostShares = numShares * pricePerShare;
-        commission = totalCostShares * COMM_RATE;
+        totalCostShares =numShares * pricePerShare;
+        commission = totalCostShares *COMM_RATE;
         total = totalCostShares + commission;
+        
+        System.out.println("Total cost of shares: $" + totalCostShares);
+        System.out.println("Commission cost is: $" + commission);
+        System.out.println("Total cost is: $" + total);
 
         
-        JOptionPane.showMessageDialog(null,
-                "Total cost of shares: $" + totalCostShares +
-                "\nCommission cost is: $" + commission +
-                "\nTotal cost is: $" + total);
-
-        System.exit(0);
+        
+        keyboard.close();
     }
 }
