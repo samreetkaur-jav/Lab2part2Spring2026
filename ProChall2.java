@@ -4,9 +4,9 @@ import java.util.Scanner;
  * This program asks the user for their first, middle, and last name.
  * It then displays the full name and the initials.
  *
- * @author: Samreet Kaur
- * @since: 2/20/2026
- * @version: v1.0
+ * @author Samreet Kaur
+ * @since 2/20/2026
+ * @version v1.0
  * 
  */
 public class ProChall2  

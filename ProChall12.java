@@ -6,9 +6,9 @@ import java.util.Scanner;
  * and displays the first character entered.
  *
  *
- * @author: Samreet Kaur
- * @since: 2/21/2026
- * @version: v1.0
+ * @author Samreet Kaur
+ * @since 2/21/2026
+ * @version v1.0
  * 
  */
 public class ProChall12 

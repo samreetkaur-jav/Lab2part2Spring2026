@@ -7,9 +7,9 @@ import java.util.Scanner;
  *
  * The commission is created as a constant.
  *
- * Author: Samreet Kaur
- * Version: v1.0
- * Since: 2/21/2026
+ * Author Samreet Kaur
+ * Version v1.0
+ * Since 2/21/2026
  */
 public class ProChall15
  {
